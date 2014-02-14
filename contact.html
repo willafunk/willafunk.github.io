@@ -4,9 +4,8 @@
 	<title>Contact &lt; Willafunk Productions</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<link rel="stylesheet" type="text/css" media="screen,projection" href="style.css" title="Musicman" />
-
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-<style type="text/css" media="screen">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <style type="text/css" media="screen">
 body {
 background: url(images/body_bg2.png) repeat-x 0px 0px;
 font-family: Arial, Helvetica, sans-serif;
@@ -45,9 +44,13 @@ color: #7e7e7e;
 <!-- Fast and Secure Contact Form plugin begin -->
 <div style="width:375px;">
 
-<form action="contact.html" id="si_contact_form1" method="post">
-<div style="text-align:left;">(*denotes required field)</div>
-<div><input type="hidden" name="si_contact_CID" value="1" /></div>
+
+<form action="http://getsimpleform.com/messages?form_api_token=19d130892a9e819bbda7329ebd094ba2" method="post">
+  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+  <input type='hidden' name='redirect_to' value='http://willafunk.com' />
+  <!-- all your input fields here.... -->
+  <div style="text-align:left;">(*denotes required field)</div>
+  <div><input type="hidden" name="si_contact_CID" value="1" /></div>
 
         <div style="text-align:left; padding-top:10px;">
                 <label for="si_contact_name1">Name:*</label>
@@ -69,34 +72,21 @@ color: #7e7e7e;
                 <label for="si_contact_message1">Message:*</label>
         </div> 
         <div style="text-align:left;">
-                <textarea style="text-align:left;" id="si_contact_message1" name="si_contact_message"  cols="40" rows="9"></textarea>
+                <textarea style="text-align:left;" id="si_contact_message1" name="message"  cols="40" rows="9"></textarea>
         </div>
 
-        <div style="text-align:left; padding-top:10px;">
+        <!--<div style="text-align:left; padding-top:10px;">
                 <label for="si_contact_captcha_code1">CAPTCHA Code:*</label>
         </div> 
         <div style="text-align:left;">
                 <input style="text-align:left;" type="text" value="" id="si_contact_captcha_code1" name="si_contact_captcha_code"  size="6" />
-        </div>
-
-<div style="width:215px; padding-top:5px; text-align:left; float:left;">
-         <img id="si_image_ctf1" style="padding-bottom:10px; float:left; border-style:none; margin:0;" src="wp-content/plugins/si-contact-form/captcha-secureimage/securimage_show_medium.php?ctf_form_num=1&amp;sid=d706902bd6579acd45196823f9043ea4" alt="CAPTCHA Image" title="CAPTCHA Image" /><a href="wp-content/plugins/si-contact-form/captcha-secureimage/securimage_play.php?ctf_form_num=1" title="CAPTCHA Audio">
-         <img src="wp-content/plugins/si-contact-form/captcha-secureimage/images/audio_icon.gif" alt="CAPTCHA Audio" style="padding-top:2px; vertical-align:top; float:left; border-style:none; margin:0;" onclick="this.blur()" /></a><br /><a href="#" title="Refresh Image" onclick="document.getElementById('si_image_ctf1').src = 'http://www.willafunk.com/wp-content/plugins/si-contact-form/captcha-secureimage/securimage_show_medium.php?ctf_form_num=1&amp;sid=' + Math.random(); return false">
-         <img src="wp-content/plugins/si-contact-form/captcha-secureimage/images/refresh.gif" alt="Refresh Image" style="vertical-align:top; float:left; border-style:none; margin:0;" onclick="this.blur()" /></a>
-
-</div>
-<br clear="all" />
-
-<div style="text-align:left; padding-top:10px;">
-  <input type="hidden" name="si_contact_action" value="send" />
-  <input type="hidden" name="si_contact_form_id" value="1" />
-  <input type="submit" style="margin:0; cursor:pointer;" value="Submit" />
-</div>
-
+        </div>-->
+        </br>
+        <input type='submit' style="margin:0; cursor:pointer; padding-top:10px;" value='Submit'/>
 </form>
 </div>
-<!-- Fast and Secure Contact Form plugin end -->
 
+<!-- Fast and Secure Contact Form plugin end -->
 
 
     </div>
@@ -104,18 +94,17 @@ color: #7e7e7e;
   <div class="clear"></div>
 
 
-
 <div id="footer">
   <div id="footerContainer">
     <p>Copyright © 2014 Willafunk Productions  |  <a href="#">Privacy Policy</a></p>
     <p><a href="">Home</a>
       / <a href="about.html"><span>About</a> / <a href="contact.html"><span>Contact</a> / <a href="media.html"><span>Media</a> / <a href="music.html"><span>Music</a> / <a href="services.html"><span>Services</a> 
-</p>
+    </p>
     <form id="newsletter" action=".html" name="newsletterForm" method="post" class="secure">
            <label>Enter your email to learn about live shows:</label>
         <input type="text" name="email" class="textBox" />
       <input class="btn" type="image" src="images/subscribe_btn.jpg" onclick="document.newsletterForm.submit();" />
-       </form>
+    </form>
   </div>
 </div>
 </body>

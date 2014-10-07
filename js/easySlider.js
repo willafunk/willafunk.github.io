@@ -30,7 +30,7 @@
 (function($) {
 
 	$.fn.easySlider = function(options){
-	  
+
 		// default configuration properties
 		var defaults = {
 			prevId: 		'prevBtn',
@@ -40,9 +40,9 @@
 			orientation:	'', //  'vertical' is optional;
 			speed: 			800			
 		}; 
-		
+
 		var options = $.extend(defaults, options);  
-		
+
 		return this.each(function() {  
 			obj = $(this); 				
 			var s = $("li", obj).length;
@@ -88,7 +88,7 @@
 			};
 			if(s>1) $("a","#"+options.nextId).fadeIn();	
 		});
-	  
+
 	};
 
 })(jQuery);

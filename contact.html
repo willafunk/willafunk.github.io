@@ -1,111 +1,238 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
-<head profile="http://gmpg.org/xfn/11">
-	<title>Contact &lt; Willafunk Productions</title>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-	<link rel="stylesheet" type="text/css" media="screen,projection" href="style.css" title="Musicman" />
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-    <style type="text/css" media="screen">
+	<head profile="http://gmpg.org/xfn/11">
+		<title>Sounds Abound Music &gt; Contact</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8;" />
+		<link rel="stylesheet" type="text/css" media="screen,projection" href="style.css" title="Musicman" />
+		 <script src="http://code.jquery.com/jquery-latest.js"></script>
+		 <script src="js/validation.js?version=1.4"></script>
+		 <style type="text/css" media="screen">
+			
 body {
-background: url(images/body_bg2.png) repeat-x 0px 0px;
-font-family: Arial, Helvetica, sans-serif;
-color: #7e7e7e;
-}
-</style>
-</head>
-                   
-<body>
-<div id="container">
-  <div id="header">
-    <h1><a href="">Willafunk Productions</a></h1>
-    	
-  </div>
-  <div id="nav">
-    <ul>
-      <li><a href="index.html"><span>Home</span></a></li>
-      <li><a href="services.html"><span>Services</span></a></li>
-      <li><a href="media.html"><span>Media</span></a></li>
-      <li><a href="music.html"><span>Music</span></a></li>
-      <li><a href="about.html"><span>About</span></a></li>
-      <li class="active"><a href="contact.html"><span>Contact</span></a></li>
 
-    
-    </ul>
-  </div>
-<div id="article">
+				background-color: #f8fbff;
+				background-image:url(images/test_transparent.gif);
+				background-repeat: repeat-x, no-repeat;
+				background-position: 0px 0px, center;
+				background-size: auto, center;
+				font-family: Arial, Helvetica, sans-serif;
 
+				color: #7e7e7e;
+			}
 
-
-
-				<h1>Contact</h1>
-
-
-<h3>Interested in one of my services or a quote?  Feel free to send me a note using this form.  <br/>Or, if you would rather talk, you can call "Matt" at 215.828.9610.</h3>
-<!-- Fast and Secure Contact Form plugin begin -->
-<div style="width:375px;">
-
-
-<form action="http://getsimpleform.com/messages?form_api_token=19d130892a9e819bbda7329ebd094ba2" method="post">
-  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-  <input type='hidden' name='redirect_to' value='http://willafunk.com' />
-  <!-- all your input fields here.... -->
-  <div style="text-align:left;">(*denotes required field)</div>
-  <div><input type="hidden" name="si_contact_CID" value="1" /></div>
-
-        <div style="text-align:left; padding-top:10px;">
-                <label for="si_contact_name1">Name:*</label>
-        </div> 
-        <div style="text-align:left;">
-                <input style="text-align:left;" type="text" id="si_contact_name1" name="si_contact_name" value=""  size="40" />
-        </div>
-        <div style="text-align:left; padding-top:10px;">
-        <label for="si_contact_email1">E-Mail Address:*</label>
-        </div> 
-        <div style="text-align:left;">
-                <input style="text-align:left;" type="text" id="si_contact_email1" name="si_contact_email" value=""  size="40" />
-        </div>
-        <div style="text-align:left; padding-top:10px;">
-                <label for="si_contact_subject1">Subject:*</label>
-        </div> 
-        <div style="text-align:left;"><input style="text-align:left;" type="text" id="si_contact_subject1" name="si_contact_subject" value=""  size="40" /></div>
-        <div style="text-align:left; padding-top:10px;">
-                <label for="si_contact_message1">Message:*</label>
-        </div> 
-        <div style="text-align:left;">
-                <textarea style="text-align:left;" id="si_contact_message1" name="message"  cols="40" rows="9"></textarea>
-        </div>
-
-        <!--<div style="text-align:left; padding-top:10px;">
-                <label for="si_contact_captcha_code1">CAPTCHA Code:*</label>
-        </div> 
-        <div style="text-align:left;">
-                <input style="text-align:left;" type="text" value="" id="si_contact_captcha_code1" name="si_contact_captcha_code"  size="6" />
-        </div>-->
-        </br>
-        <input type='submit' style="margin:0; cursor:pointer; padding-top:10px;" value='Submit'/>
-</form>
-</div>
-
-<!-- Fast and Secure Contact Form plugin end -->
-
-
-    </div>
-  </div>
-  <div class="clear"></div>
-
-
-<div id="footer">
-  <div id="footerContainer">
-    <p>Copyright © 2014 Willafunk Productions  |  <a href="#">Privacy Policy</a></p>
-    <p><a href="">Home</a>
-      / <a href="about.html"><span>About</a> / <a href="contact.html"><span>Contact</a> / <a href="media.html"><span>Media</a> / <a href="music.html"><span>Music</a> / <a href="services.html"><span>Services</a> 
-    </p>
-    <form id="newsletter" action=".html" name="newsletterForm" method="post" class="secure">
-           <label>Enter your email to learn about live shows:</label>
-        <input type="text" name="email" class="textBox" />
-      <input class="btn" type="image" src="images/subscribe_btn.jpg" onclick="document.newsletterForm.submit();" />
-    </form>
-  </div>
-</div>
-</body>
+			/*######## Right & Left Columns ########*/
+			.right-column {
+			    background-repeat: no-repeat;
+			    font: 14px "Times New Roman", Helvetica, Arial, sans-serif;
+			    font-weight: bold;
+			    width: 340px;
+             height: 475px;
+				 position:relative;
+				 float: left;
+			}
+			.right-column label>span{
+			   font-weight: bold;
+			}
+			.right-column a {
+				color: #7e7e7e;
+				text-decoration: none; /*changed from text-decoration:underline*/
+			}
+			.right-column a:hover {
+				text-decoration: underline; /*changed from text:decoration:none*/
+			}
+			.left-column {
+				 position:relative;
+				 float: left;
+				 width: 620px;
+             height: 475px;
+			}
+			.italic {
+			   font: italic bold 16px/25px "Times New Roman", Georgia, serif;
+			   color: #555;
+			}
+			/* #### Dark Matter #### */
+			.dark-matter {
+				 margin-left: auto;
+				 margin-right: auto;
+				 max-width: 500px;
+				 background: #888;
+				 padding: 30px 30px 20px 30px;
+				 font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+				 color: #D3D3D3;
+				 text-shadow: 1px 1px 1px #444;
+				 border: none;
+				 border-radius: 5px;
+				 -webkit-border-radius: 5px;
+				 -moz-border-radius: 5px;
+			}
+			.dark-matter h1 {
+				 padding: 0px 0px 10px 25px;
+				 display: block;
+				 border-bottom: 2px solid #777;
+				 margin: -10px -30px 30px -30px;
+				 font-size: 20px; 
+			}
+			.dark-matter h1>span {
+				 display: block;
+				 font-size: 11px;
+			}
+			.dark-matter label {
+				 display: block;
+				 margin: 0px 0px 5px;
+			}
+			.dark-matter label>span {
+			    float: left;
+				 width: 25%;
+				 text-align: right;
+				 padding-right: 10px;
+				 margin-top: 10px;
+				 font-weight: bold;
+			}
+			.dark-matter input[type="text"], .dark-matter input[type="email"], .dark-matter textarea, .dark-matter select {
+				 border: none;
+				 color: #525252;
+				 height: 25px;
+				 line-height:15px;
+				 margin-bottom: 16px;
+				 margin-right: 6px;
+				 margin-top: 2px;
+				 outline: 0 none;
+				 padding: 5px 0px 5px 5px;
+				 width: 70%;
+				 border-radius: 2px;
+				 -webkit-border-radius: 2px;
+				 -moz-border-radius: 2px;
+				 -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+				 background: #DFDFDF;
+			}
+			.dark-matter select {
+			    background-color: #DFDFDF;
+				 background-image: url(images/down_arrow_select_gray.png);
+				 background-repeat: no-repeat;
+				 background-position: right;
+				 width: 71%;
+				 height: 35px;
+				 color: #525252;
+				 text-indent: 0.01px;
+				 -webkit-appearance:none; 
+				 -moz-appearance: none;
+				 appearance:none;
+				 text-overflow: '';
+				 line-height: 25px;
+			}
+			.dark-matter textarea{
+				 height:100px;
+				 padding: 5px 0px 0px 5px;
+				 width: 70%;
+			}
+			.dark-matter .button {
+				 background: #FFCC02;
+				 border: none;
+				 padding: 10px 25px 10px 25px;
+				 color: #585858;
+				 border-radius: 4px;
+				 -moz-border-radius: 4px;
+				 -webkit-border-radius: 4px;
+				 text-shadow: 1px 1px 1px #FFE477;
+				 font-weight: bold;
+				 box-shadow: 1px 1px 1px #3D3D3D;
+				 -webkit-box-shadow:1px 1px 1px #3D3D3D;
+				 -moz-box-shadow:1px 1px 1px #3D3D3D;
+			}
+			.dark-matter .button:hover {
+				 color: #333;
+				 background-color: #EBEBEB;
+			}
+		 </style>
+	</head>              
+	<body onload="clearForm()";>
+      <div id="container">
+			<div id="header">
+			   <h1><a href="">Sounds Abound Music</a></h1>
+			</div>
+		   <div id="nav">
+		      <ul>
+			      <li><a href="index.html"><span>Home</span></a></li>
+				   <li><a href="services.html"><span>Services</span></a></li>
+				   <li><a href="media.html"><span>Media</span></a></li>
+				   <li><a href="music.html"><span>Live Music</span></a></li>
+				   <li><a href="about.html"><span>About</span></a></li>
+				   <li class="active"><a href="contact.html"><span>Contact</span></a></li>
+		     </ul>
+		  </div>
+        <br>
+			<!-- Fast and Secure Contact Form plugin begin -->
+			<div class="left-column">  
+				<form name="contactForm" onsubmit="return validateForm();" method="post" 
+					action="http://getsimpleform.com/messages?form_api_token=05da4fad244b0d80fda306e1530c194e" class="dark-matter">
+					<!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+					<input type='hidden' name='redirect_to' value='http://www.soundsaboundmusic.com/contact.html' />
+					<h1>Contact Form 
+					   <span>Please fill out all the fields.</span>
+					</h1>
+					<!-- all your input fields here.... -->
+					<input type="hidden" name="si_contact_CID" value="1" />
+					<label>
+						<span>NAME: <font color="#d22100">*</font></span>
+						<input id="name" type="text" name="name" placeholder="Your Full Name" />
+					</label>
+					<label>
+						<span>E-MAIL ADDRESS: <font color="#d22100">*</font></span>
+						<input id="email" type="email" name="email" placeholder="Valid Email Address" />
+					</label>
+					<label>
+						<span>SUBJECT: <font color="#d22100">*</font></span>
+						<select name="selection">
+							<option value="Lessons">Lessons</option>
+							<option value="Live Entertainment">Live Entertainment</option>
+							<option value="Composition Services">Composition Services</option>
+							<option value="General Question">General Question</option>
+						</select>
+					</label>
+					<label>
+						<span>MESSAGE: <font color="#d22100">*</font></span>
+						<textarea id="message" name="message" placeholder="Type your message here."></textarea>
+					</label>
+					<label><span>&nbsp;</span><font color="#d22100">*</font> denotes required field</label>
+					<br>
+					<label>
+						<span>&nbsp;</span>
+						<input type="submit" class="button" value="Send Message"/> 
+					</label>  
+				</form>
+			</div>
+			<div class="right-column">
+				<p>
+				   <h3 class="italic">
+				      Interested in one of my services or a quote? <br>
+				      Feel free to send me a note using this form, <br>
+						or contact me by, email, facebook, or phone (ask for Matt)!
+				   <h3>
+				</P>
+				<br><br>
+				<label>
+					<span style="color:#8f0909;">Email:</span><br><br>
+					<span><a href="mailto:soundsaboundmusic@gmail.com">soundsaboundmusic@gmail.com</a></span> 
+				</label> 
+				<br><br><br>
+				<label>
+					<span style="color:#8f0909;">Phone:</span><br><br>
+					<span>215.828.9610</span> 
+				</label> 
+				<br><br><br>
+            <a href="https://www.facebook.com/willafunk?ref=hl">
+		  		   <img src="images/facebook_logo.png" alt="Click Here For Facebook Page" />
+				</a>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div id="footer">
+		  <div id="footerContainer">
+			<p>Copyright © 2014 Sounds Abound Music  |  <a href="#">Privacy Policy</a></p>
+			<p><a href="">Home</a>
+			  / <a href="about.html"><span>About</a> / <a href="contact.html"><span>Contact</a> / <a href="media.html"><span>Media</a> / <a href="music.html"><span>Music</a> / <a href="services.html"><span>Services</a> 
+			</p>
+		  </div>
+		</div>
+	</body>
 </html>

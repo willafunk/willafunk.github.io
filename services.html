@@ -1,104 +1,173 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
-<head profile="http://gmpg.org/xfn/11">
-	<title>Services &lt; Willafunk Productions</title>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-	<link rel="stylesheet" type="text/css" media="screen,projection" href="style.css" title="Musicman" />
-	<link rel="stylesheet" type="text/css" media="print" href="print.css" />
+	<head profile="http://gmpg.org/xfn/11">
+		<title>Sounds Abound Music &gt; Services</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" media="screen,projection" href="style.css" title="Musicman" />
+		<link rel="stylesheet" type="text/css" media="print" href="print.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+		<style type="text/css" media="screen">
+			
+body {
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-<script type="text/javascript" src="js/jquery.bxSlider.js"></script>
-<script type="text/javascript">
-	$(document).ready(function(){	
-		$('#example3').bxSlider({
-				mode: 'slide',
-				speed: 250,
-				pause: 5000,
-				auto: true,
-				controls: true,
-				auto_direction: 'left',
-				next_text: 'next',
-				prev_text: 'previous',
-				width: 275,
-				wrapper_class: 'example3_container'
-		});
-                $('.warning').remove();
-                $.get("token.php",function(txt){
-                  $(".secure").append('<input type="hidden" name="ts" value="'+txt+'" />');
-                });
-	});
-</script>
-<style type="text/css" media="screen">
-body {	
-        background: url(http://www.willafunk.com/images/body_bg2.png) repeat-x 0px 0px;
-	font-family: Arial, Helvetica, sans-serif;
-        color: #7e7e7e;
-}
-</style>
-</head>
-                   
-<body>
-<div id="container">
-  <div id="header">
-    <h1><a href="">Willafunk Productions</a></h1>
-    	<div class="sliderloc wrap">
-        <h5>Appearing <span>At</span></h5>
-        <ul id="example3">
-        	  
-        </ul>
-        </div>
-  </div>
-  <div id="nav">
-    <ul>
-      <li><a href="index.html"><span>Home</span></a></li>
-      <li class="active"><a href="services.html"><span>Services</span></a></li>
-      <li><a href="media.html"><span>Media</span></a></li>
-      <li><a href="music.html"><span>Music</span></a></li>
-      <li><a href="about.html"><span>About</span></a></li>
-      <li><a href="contact.html"><span>Contact</span></a></li>
+				background-color: #f8fbff; /*#d7dee6;*/
+				background-image:url(images/test_transparent.gif);
+				background-repeat: repeat-x, no-repeat;
+				background-position: 0px 0px, center;
+				background-size: auto, center;
+				font-family: Arial, Helvetica, sans-serif;
 
-    
-    </ul>
-  </div>
-<div id="article">
+				color: #7e7e7e;
+			}
 
+			#div h1 { 
+				 padding: 0 0 10px 0; 
+				 margin: 10px 0 27px 0; 
+				 line-height: 20px; 
+				 border-bottom: 2px dotted #7c7c7c;
+				 font-size: 16px; 
+				 font-weight: bold;
+				 white-space: nowrap; 
+			}
+			 #div h1 strong { 
+			    color: #3e1f17; 
+				 font-weight: bold; 
+				 margin-right: 20px; 
+			 } 
+			 #div p { 
+				 margin-bottom: 0.5em;  
+				 line-height: 16px; 
+				 font-size: 12px;
+			 }
+			 #div img {
+				 border: solid 1px white;
+				 padding: 2px;
+				 float: left;
+				 margin-left: 0px;
+				 margin-bottom: 0px;
+			 }
+		
+			.container {    
+				 width:960px;
+				 border:solid 1px gray;
+			}
+			.imgContainer{
+				 float: left;
+			}
+			.content {
+				 width:460px;
+				 border:solid 1px red;
+				 margin-right:0px;
+				 margin-left:auto;
 
+			}
+			.extra-content {
+				 width:230px;
+				 border:solid 1px green;
+			}
+			img {
+				 border:solid 1px blue;
+			}
+			blockquote {
+				 border:solid 1px gray;
+				 width:30%;
+				 float:right;
+			}
+			.alignright { 
+				 float: right; 
+			}
+			table.servicestable {
+				 font-family: comic sans ms, verdana, arial,sans-serif;
+				 font-size:20px;
+				 width: 600px;
+			 }
+	 
+			 table.servicestable p {
+				 font-family: verdana,arial,sans-serif;
+				 font-size:11px;
+			 }
+			 table.servicestable tr {
+				 padding-bottom: 15em;
+			 }
+		</style>
+	</head>         
+	<body>
+		<div id="container">
+		  <div id="header">
+			 <h1><a href="">Sounds Abound Music</a></h1>
+		  </div>
+		  <div id="nav">
+			 <ul>
+				<li><a href="index.html"><span>Home</span></a></li>
+				<li class="active"><a href="services.html"><span>Services</span></a></li>
+				<li><a href="media.html"><span>Media</span></a></li>
+				<li><a href="music.html"><span>Live Music</span></a></li>
+				<li><a href="about.html"><span>About</span></a></li>
+				<li><a href="contact.html"><span>Contact</span></a></li>
+			 </ul>
+		  </div>
+		  <div id="div">
+		      <br><br>
+				<table border="0" class="servicestable">
+					<tr>
+						<td width="100"><img src="images/about_live_rd.png" alt="About Lessons" /></td>
+						<td width="500" style="background-color:#f5fcff;">Lessons</td>
+					</tr> 
+					<tr>
+						<td style="padding:10px 0px 40px 0px; background-color:#f6fcff;" width="600px" colspan="2">
+							<p>
+								Private in-home guitar and drum lessons are offered throughout the Northwest Philadelphia suburb region. 
+								Think of the convenience and time saved by having an instructor come to your home! Students of all ages accepted.
+							</p>
+							<p>
+								<strong style="font-weight: bold">RATE:</strong>
+								<br/><font color="#d22100">*</font>1 payment cycle (4 half hour lessons) = $125
+								<br/><font color="#d22100">*</font>10% family discount rate offered for multiple lessons in one household
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td width="100"><img src="images/about_entertainment_rd.png" alt="About Me" /></td>
+						<td width="500" style="background-color:#f6fcff;">Live Entertainment</td>
+					</tr> 
+					<tr>
+						<td style="padding:10px 0px 40px 0px; background-color:#f5fcff;" width="600px" colspan="2">
+						  <p>
+							  A quality network of musicians with the experience needed to accompany any special event or party 
+							  is available to you. Whether you are looking for a soloist, an acoustic duo or a full band, 
+							  Sounds Abound Music offers many options in most genres of music. Please <a href="music.html">browse the ‘LIVE MUSIC’ 
+							  page</a> to view a sample of our live entertainment options. 
+						  </p>	  
+						</td>
+					</tr> 
+					<tr>
+						<td width="100"><img src="images/about_composition_rd.png" alt="About Composition"/></td>
+						<td width="500" style="background-color:#f6fcff;">Composition</td>
+					</tr> 
+					<tr>
+						<td style="padding:10px 0px 0px 0px; background-color:#f5fcff;" width="600px" colspan="2">
 
+						  <p>
+							  Compositional services for all forms of media are offered – television, film, radio, etc. From simple 
+							  music beds to catchy jingles or theme music, Sounds Abound Music is ready to help make your vision a reality. 
+							  Please <a href="media.html">browse the ‘MEDIA’ page</a> to view sample clips from our media portfolio.
+						  </p>
 
-				<h1>Services</h1>
-<h2>Composition</h2>
-<p>Willafunk Productions offers compositional services for all forms of media &#8211; tv, film, radio, commercials, etc. From simple music beds to catchy jingles or theme music, Willafunk Productions is ready to help you realize your vision. Please browse the ‘MEDIA’ page to view sample clips from a video portfolio, as well as audio samples from an ever expanding music library.</p>
-<h2>Live Entertainment</h2>
-<p>Willafunk Productions offers an impressive network of musicians with the talent and experience needed to accompany any special event or party. Whether you’re looking for a soloist, an acoustic duo or a full band, Willafunk Productions  can offer an array of musical options in nearly all genres of music, from Jazz to Bluegrass to Rock and Roll.  Let Willafunk Productions handle the music at your next event. Please browse the <a href="media.html">‘MEDIA’ page</a> to view a small sample of the live entertainment Willafunk Productions can offer <em>(links coming shortly</em><em>)</em>.</p>
-<h2>Lessons</h2>
-<p>Willafunk Productions specializes in private in-home guitar and drum lessons throughout the Northwest Philadelphia suburb region (Conshohocken, Adrmore, Plymouth Meeting, Valley Forge, Collegeville, Phoenixville, Blue Bell. Glenside and all points in between).   Think of the convenience and time saved by having an instructor come to your home!  Now accepting students ages 7 and up&#8230;..adults too!.  Family discounts available (2 or more students per household).</p>
-<p><strong>RATES:</strong><br />
-$25 &#8211; 30 minute lesson (plus small travel fee where applicable)<br />
-<strong></strong></p>
-<p><strong>CREDENTIALS:</strong></p>
-<p><strong><span style="font-weight: normal;">*Winner &#8211; Best Guitarist, 2005 Emergenza Festival</span></strong></p>
-<p><strong><span style="font-weight: normal;">*20 years playing experience</span></strong></p>
-<p>*5 years teaching experience</p>
-
-
-    </div>
-  </div>
-  <div class="clear"></div>
-
-
-
-<div id="footer">
-  <div id="footerContainer">
-    <p>Copyright © 2014 Willafunk Productions  |  <a href="#">Privacy Policy</a></p>
-    <p><a href="">Home</a>
-      / <a href="about.html"><span>About</a> / <a href="contact.html"><span>Contact</a> / <a href="media.html"><span>Media</a> / <a href="music.html"><span>Music</a> / <a href="services.html"><span>Services</a> 
-</p>
-    <form id="newsletter" action=".html" name="newsletterForm" method="post" class="secure">
-           <label>Enter your email to learn about live shows:</label>
-        <input type="text" name="email" class="textBox" />
-      <input class="btn" type="image" src="images/subscribe_btn.jpg" onclick="document.newsletterForm.submit();" />
-       </form>
-  </div>
-</div>
-</body>
+						</td>
+					</tr>
+				 </table>   
+			 </div>
+		  </div>
+		  <div class="clear"></div>
+		  <div id="footer">
+			  <div id="footerContainer">
+				  <p>
+					  Copyright © 2014 Sound Abound Music  |  <a href="#">Privacy Policy</a>
+				  </p>
+				  <p>
+					  <a href="">Home</a> / <a href="about.html"><span>About</a> / <a href="contact.html"><span>Contact</a> / <a href="media.html"><span>Media</a> / <a href="music.html"><span>Music</a> / <a href="services.html"><span>Services</a> 
+				  </p>
+		  </div>
+		</div>
+	</body>
 </html>

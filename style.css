@@ -1,10 +1,10 @@
 
 /*
-THEME NAME: Musicman
+THEME NAME: Sounds Abound Music
 THEME URI: http://www.sdellis.com/musicman/
 DESCRIPTION: Basic WordPress Theme to support musician. For WordPress 2.6.x.
 VERSION: 1.0.0
-AUTHOR: Shaun Ellis
+AUTHOR: Wyatt Patterson
 AUTHOR URI: http://sdellis.com/
 TAGS: variable width, fixed width, one column, widgets, theme options, options page, white, orange, blue, microformats, hatom, hcard
 */
@@ -22,14 +22,6 @@ caption,th{text-align:left;}
 h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
 q:before,q:after{content:'';}
 abbr,acronym{border:0;}
-
-/*
-body {	
-	background: url(images/body_bg.jpg) repeat-x 0px 0px;
-	font-family: Arial, Helvetica, sans-serif;
-	color: #7e7e7e;
-}
-*/
 
 #container {
 	width:960px;
@@ -114,9 +106,6 @@ body {
 #featured ul li.ss1 {
 	background: url(images/sam_front_page_curtain.jpg) no-repeat;
 }
-/*#featured ul li.ss2 {
-	background: url(images/willafunk-01.jpg) no-repeat;
-}*/
 
 form#quote{
 	background: url(images/form_bg.jpg) repeat-x;

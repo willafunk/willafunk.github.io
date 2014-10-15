@@ -6,6 +6,18 @@
 		<link rel="stylesheet" type="text/css" media="screen,projection" href="style.css" title="Musicman" />
 		 <script src="http://code.jquery.com/jquery-latest.js"></script>
 		 <script src="js/validation.js?version=1.4"></script>
+		 <script>
+			 function popupwindow() {
+			 		
+				 var width = '622';
+				 var height = '408';
+				 var left = (screen.width/2)-(width/2);
+				 var top = (screen.height/2)-(height/2);	
+				 var url= 'images/plymouth_meeting_travel_radius_full_size.jpg';	 
+				 window.open(url, '', 'toolbar=no, status=no, titlebar=yes, location=no, menubar=no, scrollbars=no, resizable=no, width='+width+', height='+height+', top='+top+', left='+left);
+ 
+			 }
+		 </script>
 		 <style type="text/css" media="screen">
 			
 body {
@@ -49,6 +61,9 @@ body {
 			.italic {
 			   font: italic bold 16px/25px "Times New Roman", Georgia, serif;
 			   color: #555;
+			}
+			.hov-map img:hover {
+				cursor: pointer;
 			}
 			/* #### Dark Matter #### */
 			.dark-matter {
@@ -253,10 +268,10 @@ body {
 							   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97665.63544792913!2d-75.28921874370118!3d40.096573444617285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6bc3a3875a77d%3A0xb9673b40767eaa15!2sPlymouth+Meeting%2C+PA!5e0!3m2!1sen!2sus!4v1413318399624">
 							</iframe>
 						</td>-->
-						<td colspan="" valign="bottom" width="210">
-							<a href="images/plymouth_meeting_travel_radius_full_size.jpg" style="text-decoration:none">
-								<img src="images/plymouth_meeting_travel_radius_200x200.jpg" title="Click here for full-size image" />
-							</a>		
+						<td valign="bottom" width="210">
+						   <div class="hov-map">
+						      <img src="images/plymouth_meeting_travel_radius_200x200.jpg" onclick="popupwindow();" title="Click here for full-size image" />
+						   </div>
 						</td>
 						<td valign="top" align="left" style="padding:0px 0px 0px 10px; width:65;">
 							<a href="https://www.facebook.com/willafunk?ref=hl" target="_blank">

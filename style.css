@@ -167,7 +167,7 @@ form#quote {
 	height: 300px;
 }
 form#quote h2{
-	font: normal 24px "Lucida Grande", "Palatino", "Chalkduster","Trebuchet MS", Arial, Helvetica, sans-serif;
+	font: normal 25px "Lucida Grande", "Palatino", "Chalkduster","Trebuchet MS", Arial, Helvetica, sans-serif;
 	color: #fff;
 	text-decoration: none;
 	margin-bottom: 18px;
@@ -176,7 +176,7 @@ form#quote h2{
 form#quote p {
 	font-weight: bold;
 	color: #fff;
-	font-size: 13px;
+	font-size: 14px;
 	display: block;
 	float: left;
 	width: 100%;

@@ -1,222 +1,164 @@
-
-
 /*
-THEME NAME: Musicman
-THEME URI: http://www.sdellis.com/musicman/
+THEME NAME: Sounds Abound Music
+THEME URI: http://www.spacetimestudios.com/musicman/
 DESCRIPTION: Basic WordPress Theme to support musician. For WordPress 2.6.x.
 VERSION: 1.0.0
-AUTHOR: Shaun Ellis
-AUTHOR URI: http://sdellis.com/
+AUTHOR: Wyatt Patterson
+AUTHOR URI: http://spacetimestudios.com/
 TAGS: variable width, fixed width, one column, widgets, theme options, options page, white, orange, blue, microformats, hatom, hcard
 */
+
 /* CSS Reset */
 * { margin:0; padding:0; }
+
 /*	Reset everything to defaults, compacted from http://developer.yahoo.com/yui/reset	*/
+html {background: #fff;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {margin:0;padding:0;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+q:before,q:after {content:'';}
+abbr,acronym {border:0;}
 
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
-table{border-collapse:collapse;border-spacing:0;}
-fieldset,img{border:0;}
-address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
-ol,ul{list-style:none;}
-caption,th{text-align:left;}
-h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
-q:before,q:after{content:'';}
-abbr,acronym{border:0;}
-
-html { background: #fff; }
-/*
-body {	
-        background: url(images/body_bg.jpg) repeat-x 0px 0px;
-	font-family: Arial, Helvetica, sans-serif;
-        color: #7e7e7e;
-}
-*/
 #container {
 	width:960px;
 	margin:0 auto;
 	padding: 0 10px;
 }
-#header{
-	position:relative;
-	width: 100%;
+#content {
+	margin: 60px 0 0;
+	clear: both;
+	font-size: 12px;
+	color: #565656;
 }
-#header h1{
-	display:block;
-	float:left;
-	width:360px;
-	height:121px;
-	background:url(images/willafunk_logo.png) no-repeat 0 0;
-	text-indent:-9999px;
-}
-#header h1 a{
-	display:block;
-    height:100%;
-	width:100%;
-}
-#header #phone{
-	background: url(images/phone_icon.jpg) no-repeat right 0px;
-	height: 47px;
-	position: absolute;
-	top: 41px;
-	right: 0;
-	text-align:right;
-	padding: 5px 50px 0 0;
-}
-#header #phone p{
-	font-size: 20px;
-}
-#header #phone h6{
+#content .col {
+	float: left;
+	width: 258px;
+	background: url(images/col_bg.jpg) repeat-x;
+	height: 153px;
+	border: 1px solid #CCC;
+	padding: 20px;
+	margin-right: 30px;
 	font-size: 11px;
+	font-weight: bold;
 }
 
-#nav{
-	clear: both;
-	height: 35px;
-	width: 100%;
+#content .col.noMargin {
+	margin: 0;
 }
-#nav ul{
-	float: left;
+
+#content .col.fr {
+	margin: 0;
+	float: right;
 }
-#nav ul li{
-	list-style-type: none;
-	display: block;
-	height: 35px;
-	float: left;
-	padding: 0px 1px 0px 0px;
-}
-#nav ul li a{
-	color: #3f3f3f;
-	display: block;
+
+#content .col h2 {
+	font: normal 24px "Lucida Grande", "Palatino", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #b47825;
 	text-decoration: none;
+	margin-bottom: 15px;
+}
+
+#content .col h2 span {
+	color: #2f2f2f;
+}
+
+#content .col img {
+	border: solid 1px #d8d8d8;
+	padding: 2px;
+	float: right;
+	margin-left: 7px;
+	margin-bottom: 10px;
+}
+
+#content .col p {
+	margin-bottom: 20px;
+	line-height: 17px;
+}
+
+#content .col a.readmore {
+	font-weight: bold;
+	color: #252525;
+	text-decoration: underline;
+}
+
+#content .col a:hover.readmore {
+	text-decoration: none;
+}
+
+.clear {
+	clear: both;
+}
+
+div.wrap {
+	border: solid #ccc 1px;
+	margin: 20px 0 0 32px;
+	padding: 12px;
+}
+
+div.wrap.one {
+	width:479px;
+}	
+
+div.wrap.two {
+	width:869px;
+}
+
+div.wrap.three {
+	width:275px;
+}
+
+div.wrap.four {
+	width:500px;
+}	
+
+div.example3_container a.slider_prev, div.example3_container a.slider_next {
+	font:  1.0em Arial, sans-serif;
+	color: #ccc;
+	margin-top: 5px;	
+}
+
+#example3 a {
+	
+}
+#example3 h6 {
 	font-size: 12px;
 	font-weight: bold;
-	text-transform: uppercase;
-	height: 100%;
-	line-height: 35px;
-	padding: 0 0 0 18px;
 }
-#nav li a span{
-	display: block;
-	float: left;
-	height: 100%;
-	padding: 0 18px 0 0;
+#example3 li {
+	font-size: 11px;
+	list-style:none;
 }
-#nav li a:hover, #nav li.active a{
-	background: url(images/hover.jpg) no-repeat left;
-	color: #fff;
-	cursor: pointer;
-	text-decoration: none
-}
-#nav li.active a span, #nav li a:hover span{
-	background: url(images/hover.jpg) no-repeat right;
-}
-#featured{
+
+#featured {
 	margin: 45px 0 0;
 	background: #fff;
 	padding: 10px;
 	height: 340px;
 	width: 940px;
 }
-#featured ul{
+#featured ul {
 	float: left;
 }
-#featured ul li{
+#featured ul li {
 	float: left;
 	list-style-type: none;
 	display: block;
 	width: 630px;
 }
-#featured ul li a{
+#featured ul li a {
 	display: block;
 	height: 340px;
 	text-indent: -9999px;	
 }
 #featured ul li.ss1 {
-	background: url(images/willafunk-01.jpg) no-repeat;
-}
-#featured ul li.ss2 {
-	background: url(images/willafunk-02.jpg) no-repeat;
+	background: url(images/sam_front_page_curtain.jpg) no-repeat;
 }
 
-#article{
-	margin: 0px;
-	background: #fff;
-	padding: 10px;
-	height: 600px;
-	width: 940px;
-}
-#article ul{
-	float: left;
-}
-#article ul li{
-	float: left;
-	list-style-type: none;
-	display: block;
-	width: 630px;
-}
-#article ul li a{
-	display: block;
-	height: 340px;
-	text-indent: -9999px;	
-}
-#article ul li.ss1 {
-	background: url(images/willafunk-01.jpg) no-repeat;
-}
-#article ul li.ss2 {
-	background: url(images/willafunk-02.jpg) no-repeat;
-}
-
-#article h1 { padding: 0 0 10px 0; margin: 10px 0 27px 0; line-height: 20px; border-bottom: 2px solid #7c7c7c; font-size: 16px; white-space: nowrap; }
-#article h1 strong { color: #3e1f17; font-weight: bold; margin-right: 20px; }
-#article h2,
-#article h3 { color: #3e1f17; font-size: 14px; margin: 1em 0 0.5em; }
-#article h3 { margin-bottom: 0; }
-#article h4 { font-weight: bold; }
-
-#article .headings { margin: 25px 0 25px 0; }
-#article .headings h2 { color: #7e7e7e; margin: 0; }
-#article .headings h2 strong { color: #3e1f17; }
-
-#article em, #article i { font-style: italic; }
-
-#article p { margin-bottom: 0.5em;  line-height: 16px; font-size: 12px;}
-#article p img { margin: 2em 0 0 0; max-width: 720px; }
-#article p strong, #article p b { font-weight: bold; }
-#article blockquote { color: #cab393; font-size: 20px; margin: 0 0 32px 0; line-height: 24px; width: 75%; }
-#article blockquote.projectintro { margin: 0 0 5px 0; }
-#article blockquote p {line-height: 1.2em;}
-#article blockquote a { color: #cab393;}
-#article blockquote a:hover { color: #AF9474;}
-#about blockquote { margin-top: 43px;}
-#article dl dt {  }
-#article dl { margin: 0 0 1em 0; }
-
-#article .block .columns { padding-bottom: 36px; }
-#article .block .columns .column { width: 345px; float: left; padding-bottom: 36px; }
-#article .block .columns .column:first-child { margin-right: 30px;}
-#article .block:last-child .columns { padding-bottom: 0; }  /*    fixed in ie.js  */
-#article .firstcolumn { width: 300px; margin: 0 30px 0 0; float: left; }
-#article .secondcolumn { width: 550px; margin: 0; float: left; }
-
-#article .firstcolumn h2,
-#article .secondcolumn h2 { margin-top: 1em; }
-#article .firstcolumn h2:first-child,
-#article .firstcolumn h3:first-child,
-#article .secondcolumn h2:first-child,
-#article .secondcolumn h3:first-child { margin-top: 0; }    /* first-child fixed in ie.js */
-
-#article .firstcolumn blockquote,
-#article .secondcolumn blockquote { margin-top: 0; }
-#article .firstcolumn h2.date,
-#article .secondcolumn h2.date { margin-top: 2em; }
-
-#article .slides { position: absolute; top: 0; display: none; }    /*    20px matches .block padding     */
-#article .slides h1, #article .buffer h1 { margin-bottom: 0; background: #fff;}
-#article .slides a,
-#article .buffer div { width: 720px; height: 376px; display: block;  margin: 10px 0 10px 0; }
-#article .slides a img { width: 100%; height: auto; }
-
-form#quote{
+form#quote {
 	background: url(images/form_bg.jpg) repeat-x;
 	margin: 0px;
 	padding: 20px;
@@ -225,39 +167,23 @@ form#quote{
 	height: 300px;
 }
 form#quote h2{
-	font: normal 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
-	color: #fff;
-	text-decoration: none;
-	margin-bottom: 18px;
-}
-/*
-/This is for the contact form plugin
-*/
-#quoteclass h2{
-	font: normal 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font: normal 25px "Lucida Grande", "Palatino", "Chalkduster","Trebuchet MS", Arial, Helvetica, sans-serif;
 	color: #fff;
 	text-decoration: none;
 	margin-bottom: 18px;
 }
 
-#quoteclass #phonenum{
-	float: right;
-	color: #fff;
-	font-size: 12px;
-	display: block;
-}
-
-form#quote p{
+form#quote p {
 	font-weight: bold;
 	color: #fff;
-	font-size: 12px;
+	font-size: 14px;
 	display: block;
 	float: left;
 	width: 100%;
-        line-height:150%;
+   line-height:150%;
 }
 
-form#quote label{
+form#quote label {
 	font-weight: bold;
 	color: #fff;
 	font-size: 12px;
@@ -265,7 +191,7 @@ form#quote label{
 	float: left;
 	width: 100%;
 }
-form#quote input, form#quote textarea{
+form#quote input, form#quote textarea {
 	background-color: #fff;
 	border:1px solid #ddd;
 	color: #666;
@@ -277,115 +203,59 @@ form#quote input, form#quote textarea{
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 }
-form#quote textarea{
+form#quote textarea {
 	height: 45px;
 }
-form#quote input.btn{
+form#quote input.btn {
 	width: auto;
 	border: none;
 	padding: 0;
 	margin-top: 0;
 }
-form#quote #phonenum{
+form#quote #phonenum {
 	float: right;
 	color: #fff;
 	font-size: 12px;
 	display: block;
 }
 
-
-#content{
-	margin: 80px 0 0;
-	clear: both;
-	font-size: 12px;
-	color: #767676;
-}
-
-#content .col{
-	float: left;
-	width: 258px;
-	background: url(images/col_bg.jpg) repeat-x;
-	height: 153px;
-	border: 1px solid #CCC;
-	padding: 20px;
-	margin-right: 30px;
-}
-#content .col h2{
-	font: normal 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
-	color: #b47825;
-	text-decoration: none;
-	margin-bottom: 18px;
-}
-#content .col h2 span{
-	color: #2f2f2f;
-}
-#content .col img{
-	border: solid 1px #d8d8d8;
-	padding: 2px;
-	float: right;
-	margin-left: 10px;
-	margin-bottom: 10px;
-}
-#content .col p{
-	margin-bottom: 20px;
-	line-height: 17px;
-}
-#content .col a.readmore{
-	font-weight: bold;
-	color: #252525;
-	text-decoration: underline;
-}
-#content .col a:hover.readmore{
-	text-decoration: none;
-}
-#content .col.noMargin{
-	margin: 0;
-}
-#content .col.fr {
-	margin: 0;
-	float: right;
-}
-.clear {
-	clear: both;
-}
-
-
-#footer{
+#footer {
 	clear: both;
 	background: url(images/footer_bg.jpg);
 	height: 100px;
 	width: 100%;
 	margin-top: 40px;
+	position: bottom;
 }
-#footerContainer{
+#footerContainer {
 	margin: 0px auto 0;
-	width: 960px;
+	width: 100%;
 	font-size: 12px;
 	color: #ddd;
 	padding-top: 20px;
-	position: relative;
+	position: bottom;
 }
-#footerContainer p{
-	margin: 8px 0 8px;
+#footerContainer p {
+	margin: 8px 10px 8px;
 }
-#footerContainer a{
+#footerContainer a {
 	color: #ddd;
 	text-decoration: none;
 }
-#footerContainer a:hover{
+#footerContainer a:hover {
 	text-decoration: underline;
 }
-form#newsletter{
+form#newsletter {
 	position: absolute;
 	right: 0;
 	top: 20px;
 	width: 300px;
 }
-form#newsletter label{
+form#newsletter label {
 	font-weight: bold;
 	color: #fff;
 }
-form#newsletter input{
+form#newsletter input {
 	background-color: #fff;
 	border:1px solid #ddd;
 	color: #666;
@@ -397,102 +267,105 @@ form#newsletter input{
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 }
-form#newsletter input.btn{
+form#newsletter input.btn {
 	width: auto;
 	border: none;
 	padding: 0;
 	margin-left: 3px;
 }
 
-/* Easy Slider */
-    .sliderloc {
-		position: absolute;
-		top: 0px;
-		right: 0;	
-		background: url(images/col_bg.jpg) repeat-x;
-		width:275px;
-		height:85px;
-	}
-	
-	.sliderloc h5{
-		font: normal 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
-		color: #b47825;
-		text-decoration: none;
-		margin-bottom: 5px;
-		margin-top: -10px;
-	}
-	
-	.sliderloc h5 span{
-		color: #2f2f2f;
-	}
-	
-	.sliderloc a.event h6{
-		font-weight: bold;
-		color: #252525;
-		text-decoration: underline;
-		font-size: 12px;
-	}
-	.sliderloc a:hover.event{
-		text-decoration: none;
-	}
-	
-	#slider ul, #slider li{
-		margin:0;
-		padding:0;
-		list-style:none;
-		}
-	#slider, #slider li{ 
-		/* 
-			define width and height of container element and list item (slide)
-			list items must be the same size as the slider area
-		*/ 
-		width:240px;
-		height:75px;
-		overflow:hidden;
-		font-size: 11px; 		
-		}				
+#header {
+	position:relative;
+	width: 100%;
+}
+#header h1 {
+	display:block;
+	float:left;
+	width:560px;
+	height:121px;
+	background:url(images/soundsaboundmusic_logo.png) no-repeat 0 0;
+	background-position: center; 
+	text-indent:-9999px;
+}
+#header h1 a {
+	display:block;
+   height:100%;
+	width:100%;
+}
+#header #phone {
+	background: url(images/phone_icon.jpg) no-repeat right 0px;
+	height: 47px;
+	position: absolute;
+	top: 41px;
+	right: 0;
+	text-align:right;
+	padding: 5px 50px 0 0;
+}
+#header #phone p {
+	font-size: 20px;
+}
+#header #phone h6 {
+	font-size: 11px;
+}
 
-	span#prevBtn{}
-	span#nextBtn{}					
+#nav {
+	clear: both;
+	height: 35px;
+	width: 100%;
+}
+#nav ul {
+	float: left;
+}
+#nav ul li {
+	list-style-type: none;
+	display: block;
+	height: 35px;
+	float: left;
+	padding: 0px 1px 0px 0px;
+}
+#nav ul li a {
+	color: #3f3f3f;
+	display: block;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	height: 100%;
+	line-height: 35px;
+	padding: 0 0 0 18px;
+}
+#nav li a span {
+	display: block;
+	float: left;
+	height: 100%;
+	padding: 0 18px 0 0;
+}
+#nav li a:hover, #nav li.active a {
+	background: url(images/hover.jpg) no-repeat left;
+	color: #fff;
+	cursor: pointer;
+	text-decoration: none
+}
+#nav li.active a span, #nav li a:hover span {
+	background: url(images/hover.jpg) no-repeat right;
+}
 
-/* // Easy Slider */
-    #example3 h6{
-		font-size: 12px;
-		font-weight: bold;
-	}
-    #example3 li{
-		font-size: 11px;
-		list-style:none;
-	}
-	
-	div.example3_container a.slider_prev, div.example3_container a.slider_next {
-	font:  1.0em Arial, sans-serif;
-	color: #ccc;
-	margin-top: 5px;	
-	}
+/*
+/This is for the contact form plugin
+*/
+#quoteclass h2 {
+	font: normal 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #fff;
+	text-decoration: none;
+	margin-bottom: 18px;
+}
 
-	#example3 a {
-		
-	}
-	
-	div.wrap {
-		border: solid #ccc 1px;
-		margin: 20px 0 0 32px;
-		padding: 12px;
-	}
-	
-	div.wrap.one {
-		width:479px;
-	}	
-	
-	div.wrap.two {
-		width:869px;
-	}
-	
-	div.wrap.three {
-		width:275px;
-	}
-	
-	div.wrap.four {
-		width:500px;
-	}	
+#quoteclass #phonenum {
+	float: right;
+	color: #fff;
+	font-size: 12px;
+	display: block;
+}		
+
+span#prevBtn{}
+span#nextBtn{}					
